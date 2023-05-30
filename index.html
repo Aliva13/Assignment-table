@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>User List</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <h1>Table view for User List</h1>
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>User Name</th>
+        <th>User Type</th>
+        <th>Last Accessed Time</th>
+        <th>More-info</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>@aliva30</td>
+        <td>Admin</td>
+        <td>2023-05-30 17:03</td>
+        <td><i class="fa fa-eye" style="font-size:24px"></i><td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div id="userModal" class="modal">
+    <div class="modal-content">
+      <h2>User Details</h2>
+      <p><strong>User Name:</strong> <span id="modalUserName"></span></p>
+      <p><strong>User ID:</strong> <span id="modalUserId"></span></p>
+      <p><strong>User Type:</strong> <span id="modalUserType"></span></p>
+      <p><strong>Created By:</strong> <span id="modalCreatedBy"></span></p>
+      <p><strong>Last Accessed Time:</strong> <span id="modalLastAccessedTime"></span></p>
+      <p><strong>Contact No:</strong> <span id="modalContactNo"></span></p>
+      <p><strong>Email ID:</strong> <span id="modalEmailId"></span></p>
+      <button id="closeButton">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
