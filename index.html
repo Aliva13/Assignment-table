@@ -3,7 +3,8 @@
 <head>
   <title>User List</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
+  
 </head>
 <body>
   <h1>Table view for User List</h1>
@@ -13,7 +14,7 @@
         <th>User Name</th>
         <th>User Type</th>
         <th>Last Accessed Time</th>
-        <th>More-info</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
@@ -21,25 +22,74 @@
         <td>@aliva30</td>
         <td>Admin</td>
         <td>2023-05-30 17:03</td>
-        <td><i class="fa fa-eye" style="font-size:24px"></i><td>
+        <td><button onclick="showUserDetails('@aliva30', '744', 'Admin', 'Aliva Mishra','2023-05-30 17:03', '6370152655', 'aliva30@example.com')">View</button></td>
+      </tr>
+      <tr>
+        <td>@prabhat13</td>
+        <td>Admin</td>
+        <td>2023-05-30 17:03</td>
+        <td><button  onclick="showUserDetails('@prabhat13', '745', 'Admin1','Prabhat Jha', '2023-05-31 12:03', '1234567890', 'prabhat13@example.com')">View</button></td>
+      </tr>
+      <tr>
+        <td>@arpana31</td>
+        <td>Admin</td>
+        <td>2023-05-30 17:03</td>
+        <td><button onclick="showUserDetails('@arpana31', '746', 'Admin2', 'Arpana Mishra','2023-05-25 05:03', '2345678980', 'arpana31@example.com')">View</button></td>
+      </tr>
+      <tr>
+        <td>@sanket45</td>
+        <td>Admin</td>
+        <td>2023-05-30 17:03</td>
+        <td><button onclick="showUserDetails('@sanket45', '747', 'Admin3','Sanket Kumar', '2023-05-26 15:03', '9876543210', 'sanket45@example.com')">View</button></td>
+      </tr>
+      <tr>
+        <td>@dev78</td>
+        <td>Admin</td>
+        <td>2023-05-30 17:03</td>
+        <td><button onclick="showUserDetails('@dev78', '748', 'Admin4','Dev Sharma', '2023-05-27 08:03', '3456788754', 'dev78@example.com')">View</button></td>
       </tr>
     </tbody>
   </table>
 
   <div id="userModal" class="modal">
     <div class="modal-content">
-      <h2>User Details</h2>
-      <p><strong>User Name:</strong> <span id="modalUserName"></span></p>
-      <p><strong>User ID:</strong> <span id="modalUserId"></span></p>
-      <p><strong>User Type:</strong> <span id="modalUserType"></span></p>
-      <p><strong>Created By:</strong> <span id="modalCreatedBy"></span></p>
-      <p><strong>Last Accessed Time:</strong> <span id="modalLastAccessedTime"></span></p>
-      <p><strong>Contact No:</strong> <span id="modalContactNo"></span></p>
-      <p><strong>Email ID:</strong> <span id="modalEmailId"></span></p>
-      <button id="closeButton">Close</button>
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>User Details</h2>
+        <table>
+            <tr>
+                <td>User Name:</td>
+                <td><span id="modalUserName"></span></td>
+            </tr>
+            <tr>
+                <td>User ID:</td>
+                <td><span id="modalUserId"></span></td>
+            </tr>
+            <tr>
+                <td>User Type:</td>
+                <td><span id="modalUserType"></span></td>
+            </tr>
+            <tr>
+                <td>Created By:</td>
+                <td><span id="modalCreatedBy"></span></td>
+            </tr>
+            <tr>
+                <td>Last Accessed Time:</td>
+                <td><span id="modalLastAccessedTime"></span></td>
+            </tr>
+            <tr>
+                <td>Contact No:</td>
+                <td><span id="modalContactNo"></span></td>
+            </tr>
+            <tr>
+                <td>Email ID:</td>
+                <td><span id="modalEmailId"></span></td>
+            </tr>
+        </table>
     </div>
-  </div>
+</div>
 
-  <script src="script.js"></script>
+
+
+ 
 </body>
 </html>

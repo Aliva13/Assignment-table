@@ -1,6 +1,3 @@
-body{
-  margin-top: 170px;
-}
 table th{
   padding-top: 10px;
   padding-bottom: 20px;
@@ -38,10 +35,7 @@ table th td{
   border: 1px solid #888;
   width: 80%;
 }
-.fa {
-padding-left: 20px;
-}
-#closeButton {
+.close {
   background-color: #97993f;
   border: none;
   color: white;
@@ -50,11 +44,11 @@ padding-left: 20px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 1px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
-#closeButton:hover {
+.close:hover {
   background-color: rgb(238, 233, 233); 
   color: black; 
   border: 2px solid #d3625a;
